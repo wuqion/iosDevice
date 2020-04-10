@@ -14,6 +14,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *cpu;
+@property (weak, nonatomic) IBOutlet UITextView *cashContent;
 
 @end
 
@@ -32,7 +33,6 @@
         self.cpu.text = [NSString stringWithFormat:@"cpu用量:%f",[self CpuUsage]];
     });
     dispatch_resume(timer);
-    
     
 }
 
@@ -76,7 +76,21 @@
     
     return cpu_usage;
 }
-
+- (IBAction)cashClick:(id)sender {
+    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString * cashContent = [userDefaults objectForKey:@"cashKey"];
+    NSLog(@"%@",cashContent);
+    if (cashContent) {
+        self.cashContent.text =cashContent;
+        [userDefaults setObject:nil forKey:@"cashKey"];
+    }else{
+        [self ceshi];
+    }
+    
+}
+- (void)ceshi{
+    @[][1];
+}
 
 
 @end

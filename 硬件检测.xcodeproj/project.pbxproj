@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE28DBF024400D9E0068BAF9 /* Cash.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28DBEF24400D9E0068BAF9 /* Cash.m */; };
 		CE983284243F077300661667 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE983283243F077300661667 /* AppDelegate.m */; };
 		CE983287243F077300661667 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE983286243F077300661667 /* SceneDelegate.m */; };
 		CE98328A243F077300661667 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE983289243F077300661667 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE28DBEE24400D9E0068BAF9 /* Cash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cash.h; sourceTree = "<group>"; };
+		CE28DBEF24400D9E0068BAF9 /* Cash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cash.m; sourceTree = "<group>"; };
 		CE98327F243F077300661667 /* 硬件检测.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "硬件检测.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE983282243F077300661667 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE983283243F077300661667 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 			children = (
 				CE983282243F077300661667 /* AppDelegate.h */,
 				CE983283243F077300661667 /* AppDelegate.m */,
+				CE28DBEE24400D9E0068BAF9 /* Cash.h */,
+				CE28DBEF24400D9E0068BAF9 /* Cash.m */,
 				CE983285243F077300661667 /* SceneDelegate.h */,
 				CE983286243F077300661667 /* SceneDelegate.m */,
 				CE983288243F077300661667 /* ViewController.h */,
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE28DBF024400D9E0068BAF9 /* Cash.m in Sources */,
 				CE98328A243F077300661667 /* ViewController.m in Sources */,
 				CE983284243F077300661667 /* AppDelegate.m in Sources */,
 				CE983295243F077600661667 /* main.m in Sources */,
@@ -290,12 +296,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JSRBNARJYJ;
 				INFOPLIST_FILE = "硬件检测/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baixin.----";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CITS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,12 +314,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JSRBNARJYJ;
 				INFOPLIST_FILE = "硬件检测/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baixin.----";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CITS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

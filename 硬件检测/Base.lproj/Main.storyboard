@@ -25,16 +25,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heA-kP-kXh">
+                                <rect key="frame" x="40" y="125" width="334" height="30"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="崩溃收集测试"/>
+                                <connections>
+                                    <action selector="cashClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MM7-71-yUS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TDA-BK-unb">
+                                <rect key="frame" x="20" y="163" width="374" height="163"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="YhV-tN-2Kx"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="TDA-BK-unb" firstAttribute="trailing" secondItem="hcc-dj-MiX" secondAttribute="trailing" id="6j0-w8-Geg"/>
+                            <constraint firstItem="heA-kP-kXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="7ed-bz-NBv"/>
+                            <constraint firstItem="TDA-BK-unb" firstAttribute="top" secondItem="heA-kP-kXh" secondAttribute="bottom" constant="8" id="BcM-Xx-FEh"/>
+                            <constraint firstItem="heA-kP-kXh" firstAttribute="top" secondItem="hcc-dj-MiX" secondAttribute="bottom" constant="8" id="KEM-9Y-0iN"/>
                             <constraint firstItem="hcc-dj-MiX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="RYs-fd-C7f"/>
                             <constraint firstItem="hcc-dj-MiX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xw9-iK-5Aq"/>
+                            <constraint firstItem="TDA-BK-unb" firstAttribute="leading" secondItem="hcc-dj-MiX" secondAttribute="leading" id="aNM-I9-DTY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heA-kP-kXh" secondAttribute="trailing" constant="40" id="jw2-ug-iIN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcc-dj-MiX" secondAttribute="trailing" constant="20" id="wHg-EP-RUV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cashContent" destination="TDA-BK-unb" id="KeH-rP-nnW"/>
                         <outlet property="cpu" destination="hcc-dj-MiX" id="DHj-Ad-ZhG"/>
                     </connections>
                 </viewController>
